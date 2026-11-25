@@ -1,0 +1,18 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  // Static product pages for ogerek.com/<product>. Only the routes below are served by this
+  // Worker; every other ogerek.com path keeps going to the main ogerek app (origin server).
+  "name": "ogerek-products",
+  "compatibility_date": "2026-11-20",
+  "assets": {
+    "directory": "./public",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  },
+  "routes": [
+    { "pattern": "ogerek.com/snaptable*", "zone_name": "ogerek.com" },
+    { "pattern": "www.ogerek.com/snaptable*", "zone_name": "ogerek.com" }
+  ],
+  "workers_dev": false,
+  "preview_urls": false
+}
