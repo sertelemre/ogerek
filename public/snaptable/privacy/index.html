@@ -32,7 +32,8 @@
 
   <h2>What leaves your device</h2>
   <ul>
-    <li><strong>License checks (Pro only).</strong> When you activate or re-validate a license, the extension sends your license key and a device label (e.g. “SnapTable · MacIntel”) to our license server, which runs on Cloudflare and forwards the request to Creem. We do not store these requests; Cloudflare may keep standard technical logs (such as IP address and time) for a short period.</li>
+    <li><strong>License checks (Pro only).</strong> When you activate or re-validate a license, the extension sends your license key and a device label (e.g. “SnapTable · MacIntel”) to our license server, which runs on Cloudflare and forwards the request to Creem. Cloudflare may keep standard technical logs (such as IP address and time) for a short period.</li>
+    <li><strong>Abuse prevention (Pro only).</strong> To stop shared or refunded keys from being used, the license server keeps a one-way hash of your license key — never the key itself — together with how often it was activated (with the device label and country of the last activation), whether it has been revoked, and which Creem subscription and order it belongs to. Creem tells our server about purchases, renewals, cancellations, refunds and disputes so that access follows your subscription.</li>
     <li><strong>Google Sheets export (Pro, optional).</strong> If you choose “Sheets”, Chrome asks for your permission and the extension creates a spreadsheet in your Google Drive. Data goes directly from your browser to Google; we never see it. The extension only has access to files it creates (<code>drive.file</code> scope).</li>
     <li><strong>Payments.</strong> Purchases are processed by Creem, our merchant of record. Creem collects your payment details, name, email and billing country under its own privacy policy. We receive order information (such as email, country and subscription status) to provide support.</li>
   </ul>
