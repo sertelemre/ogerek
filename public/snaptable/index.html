@@ -3,90 +3,104 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SnapTable AI — Scrape any table or list in one click</title>
-<meta name="description" content="Chrome extension that detects tables and lists, follows pagination and exports to Excel, CSV, JSON or Google Sheets.">
+<title>SnapTable — Any table on the web. In one click.</title>
+<meta name="description" content="Chrome extension that finds tables and lists, follows pagination and exports to Excel, CSV, JSON or Google Sheets.">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
 <link rel="icon" type="image/png" href="/snaptable/assets/icon32.png">
-<link rel="stylesheet" href="/snaptable/assets/site.css">
-<meta property="og:title" content="SnapTable AI — Scrape any table or list in one click">
-<meta property="og:description" content="Chrome extension that detects tables and lists, follows pagination and exports to Excel, CSV, JSON or Google Sheets.">
+<link rel="stylesheet" href="/assets/site.css">
+<meta property="og:title" content="SnapTable — Any table on the web. In one click.">
+<meta property="og:description" content="Chrome extension that finds tables and lists, follows pagination and exports to Excel, CSV, JSON or Google Sheets.">
 <meta property="og:image" content="https://ogerek.com/snaptable/assets/icon512.png">
 <meta property="og:url" content="https://ogerek.com/snaptable/">
 </head>
-<body>
-<header class="wrap nav">
-  <a class="brand" href="/snaptable/"><img src="/snaptable/assets/icon128.png" alt=""><span>SnapTable</span><span class="ai">AI</span></a>
-  <nav><a href="/snaptable/#features">Features</a><a href="/snaptable/#how">How it works</a><a href="/snaptable/#pricing">Pricing</a><a href="/snaptable/#faq">FAQ</a></nav>
-</header>
+<body class="has-subnav">
+<header class="gnav"><div class="wrap"><a class="wordmark" href="/">ogerek</a><nav><a href="/#products">Products</a><a href="mailto:hello@ogerek.com">Contact</a></nav></div></header>
+<div class="subnav"><div class="wrap">
+  <a class="title" href="/snaptable/"><img src="/snaptable/assets/icon128.png" alt="">SnapTable</a>
+  <nav><a href="/snaptable/#features">Features</a><a href="/snaptable/#how">How it works</a><a href="/snaptable/#faq">FAQ</a><a class="pill small" href="/snaptable/#pricing">Get Pro</a></nav>
+</div></div>
 <main>
-<section class="wrap hero">
-  <div>
-    <span class="eyebrow">✦ Chrome extension · no code</span>
-    <h1>Any table or list on the web, <span class="grad">in one click.</span></h1>
-    <p class="lead">SnapTable finds the repeating data on a page — product grids, search results, map listings, HTML tables — follows the “Next” button for you and hands you a clean Excel, CSV, JSON or Google Sheets file.</p>
-    <div class="cta">
-      <span class="btn soon" title="Chrome Web Store listing coming soon">Add to Chrome — coming soon</span>
-      <a class="btn primary" href="#pricing">See pricing</a>
-    </div>
-    <p class="small">Free: 200 rows a month, no account needed. Pro: unlimited rows, automatic pagination and Google Sheets for $5.99/month.</p>
+<section class="hero">
+  <div class="wrap">
+    <div class="eyebrow"><img src="/snaptable/assets/icon128.png" alt="">SnapTable</div>
+    <h1>Any table on the web.<br>In one click.</h1>
+    <p class="sub">SnapTable finds the data on any page, follows every “Next” button for you and hands you a clean spreadsheet — Excel, CSV, JSON or Google Sheets.</p>
+    <div class="ctas"><a class="pill" href="#pricing">See plans</a><a class="more" href="#how">How it works</a></div>
+    <p class="note">Coming soon to the Chrome Web Store. Free to start.</p>
   </div>
-  <img class="shot" src="/snaptable/assets/panel.png" alt="SnapTable side panel after scraping 3 pages of a book store: 60 rows with images, ratings, titles and prices" width="340" height="731">
-</section>
-
-<section class="wrap" id="features">
-  <div class="section-title"><h2>Built for people who need the data, not a scraping project</h2><p>E-commerce sellers, marketers, researchers and analysts.</p></div>
-  <div class="grid">
-    <div class="card"><span class="emoji">✨</span><h3>Finds the data for you</h3><p>Open the panel and SnapTable highlights every table, list and card grid on the page. Wrong one? Click “Select this table” on the page.</p></div>
-    <div class="card"><span class="emoji">🔁</span><h3>Follows every page</h3><p>Next buttons in 20+ languages, infinite scroll, “Load more” and single-page apps — including full page reloads.</p></div>
-    <div class="card"><span class="emoji">🧹</span><h3>Clean columns</h3><p>Smart names (Price, Rating, Author…), duplicate rows removed, prices turned into real numbers, lazy-loaded images resolved.</p></div>
-    <div class="card"><span class="emoji">🖱️</span><h3>Point and click</h3><p>Add or remove a column by clicking a value on the page. Pick the list or the next button by hand when a site is unusual.</p></div>
-    <div class="card"><span class="emoji">📤</span><h3>Every format</h3><p>Real .xlsx with a styled header and filters, UTF-8 CSV, JSON, Markdown for Notion, or straight into Google Sheets.</p></div>
-    <div class="card"><span class="emoji">🔒</span><h3>Stays in your browser</h3><p>Scraped data never touches our servers. Exports are created on your computer.</p></div>
-  </div>
-</section>
-
-<section class="wrap steps" id="how">
-  <div class="section-title"><h2>How it works</h2></div>
-  <div class="grid">
-    <div class="card"><h3>Open a page</h3><p>Amazon results, Google Maps, a directory, a Wikipedia table — anything with repeating data.</p></div>
-    <div class="card"><h3>Click the SnapTable icon</h3><p>The side panel opens, detects the lists and previews the rows. Tweak columns if you like.</p></div>
-    <div class="card"><h3>Scrape all pages & export</h3><p>Let SnapTable walk the pagination, then download Excel / CSV / JSON or send it to Google Sheets.</p></div>
-  </div>
-</section>
-
-<section class="wrap" id="pricing">
-  <div class="section-title"><h2>Simple pricing</h2><p>Start free. Upgrade when you need more.</p></div>
-  <div class="plans">
-    <div class="card plan">
-      <h3>Free</h3>
-      <div class="price">$0</div>
-      <ul><li>200 exported rows per month</li><li>Excel, CSV, JSON, Markdown</li><li>Smart detection & column picker</li><li>Add pages one by one</li></ul>
-      <span class="btn soon">Install the extension</span>
-    </div>
-    <div class="card plan pro">
-      <span class="badge">PRO</span>
-      <div class="price">$5.99 <span>/ month</span></div>
-      <ul><li>Unlimited rows</li><li>Automatic pagination: next button, infinite scroll, load more</li><li>Export straight into Google Sheets</li><li>Use on up to 3 Chrome profiles</li><li>Cancel anytime</li></ul>
-      <a class="btn primary" href="https://www.creem.io/test/payment/prod_67TGXE3udLoiNbzCSZb1ob">Get SnapTable Pro</a>
+  <div class="stage">
+    <div class="window" role="img" aria-label="A book store page with its product grid highlighted, next to the SnapTable side panel showing 60 rows collected from 3 pages">
+      <div class="chrome"><i></i><i></i><i></i><span>books.toscrape.com</span></div>
+      <div class="page"><img src="/snaptable/assets/page.jpg" alt="" width="1280" height="900"></div>
+      <div class="side"><img src="/snaptable/assets/panel.png" alt="" width="400" height="860"></div>
     </div>
   </div>
-  <p class="small" style="text-align:center">Payments are handled by Creem, our merchant of record. Sales tax/VAT is added at checkout where required.</p>
 </section>
 
-<section class="wrap" id="faq" style="max-width:760px">
-  <div class="section-title"><h2>FAQ</h2></div>
-  <details><summary>How do I activate Pro?</summary><p>After paying you get a license key by email (it's also in the Creem customer portal). In SnapTable, click the plan badge at the top of the panel, paste the key and press Activate.</p></details>
-  <details><summary>Can I use it on more than one computer?</summary><p>Yes — one license works on up to 3 Chrome profiles. Use “Deactivate on this device” in the plan dialog to move it.</p></details>
-  <details><summary>How do I cancel?</summary><p>Any time, from the <a href="https://creem.io/portal/login">Creem customer portal</a>. Pro stays active until the end of the period you paid for.</p></details>
-  <details><summary>Do you see the data I scrape?</summary><p>No. Detection, extraction and file exports all happen inside your browser. See the <a href="/snaptable/privacy/">privacy policy</a>.</p></details>
-  <details><summary>Is scraping allowed?</summary><p>SnapTable reads what your browser already shows you. You are responsible for following each website's terms and the law where you live — see our <a href="/snaptable/terms/">terms</a>.</p></details>
+<section class="section alt" id="features">
+  <div class="wrap">
+    <div class="section-head"><h2>Built for the data,<br>not for scraping projects.</h2><p>For sellers, marketers, researchers and analysts who just need the rows.</p></div>
+    <div class="bento">
+      <div class="tile w4"><svg class="icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="7" width="24" height="20" rx="3"/><path d="M4 13h24M12 13v14"/><circle cx="29" cy="27" r="6" fill="var(--tile)"/><path d="m33.5 31.5 3.5 3.5"/></svg><h3>It finds the data. You don't have to.</h3><p>Open the panel and SnapTable outlines every table, list and product grid on the page. Picked the wrong one? Click “Select this table” right on the page.</p></div>
+      <div class="tile"><div class="big">20+</div><h3>languages</h3><p>“Next”, “Sonraki”, “Weiter”, “›” — pagination is recognised wherever you are.</p></div>
+      <div class="tile"><svg class="icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="9" width="20" height="24" rx="3"/><path d="M12 5h17a3 3 0 0 1 3 3v21"/><path d="m21 21 6 0m-3-3 3 3-3 3"/></svg><h3>Every page.</h3><p>Next buttons, infinite scroll, “Load more” and single-page apps — even when the page fully reloads.</p></div>
+      <div class="tile"><svg class="icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="7" width="30" height="26" rx="3"/><path d="M15 7v26M25 7v26M5 15h30"/></svg><h3>Clean columns.</h3><p>Price, Rating, Author — named for you. Duplicates removed, prices turned into real numbers.</p></div>
+      <div class="tile"><svg class="icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 5v19m-7-7 7-7 7 7"/><path d="M8 22v8a3 3 0 0 0 3 3h18a3 3 0 0 0 3-3v-8"/></svg><h3>Every format.</h3><p>A real .xlsx with filters, UTF-8 CSV, JSON, Markdown, or straight into Google Sheets.</p></div>
+      <div class="tile w3 ink"><svg class="icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="18" width="24" height="17" rx="3"/><path d="M13 18v-5a7 7 0 0 1 14 0v5"/></svg><h3>Your data stays in your browser.</h3><p>Detection, extraction and exports all happen on your computer. We never see what you scrape.</p></div>
+      <div class="tile w3"><div class="big">1 click</div><h3>to add or drop a column.</h3><p>Point at any value on the page. Shift-click takes the link instead of the text.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="how">
+  <div class="wrap">
+    <div class="section-head"><h2>Three steps. That's it.</h2></div>
+    <div class="steps">
+      <div class="step"><div class="n">1</div><h3>Open a page.</h3><p>A marketplace search, a map listing, a directory or a plain HTML table.</p></div>
+      <div class="step"><div class="n">2</div><h3>Click SnapTable.</h3><p>The side panel opens, finds the lists and previews the rows. Tweak columns if you like.</p></div>
+      <div class="step"><div class="n">3</div><h3>Export.</h3><p>Let it walk through every page, then download Excel, CSV or JSON — or send it to Google Sheets.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="pricing">
+  <div class="wrap">
+    <div class="section-head"><h2>Start free.<br>Go Pro when you need more.</h2></div>
+    <div class="plans">
+      <div class="plan">
+        <div class="label">Free</div>
+        <h3>SnapTable</h3>
+        <div class="price">$0</div>
+        <ul><li>200 exported rows per month</li><li>Excel, CSV, JSON and Markdown</li><li>Smart detection and column picker</li><li>Add pages one by one</li></ul>
+        <span class="pill muted">Coming soon to Chrome</span>
+      </div>
+      <div class="plan pro">
+        <div class="label">Pro</div>
+        <h3>SnapTable Pro</h3>
+        <div class="price">$5.99 <span>/ month</span></div>
+        <ul><li>Unlimited rows</li><li>Automatic pagination: next button, infinite scroll, load more</li><li>Export straight into Google Sheets</li><li>Up to 3 Chrome profiles</li><li>Cancel anytime</li></ul>
+        <a class="pill" href="https://www.creem.io/test/payment/prod_67TGXE3udLoiNbzCSZb1ob">Get SnapTable Pro</a>
+      </div>
+    </div>
+    <p class="fineprint">Payments are handled by Creem, our merchant of record. Sales tax or VAT is added at checkout where required.</p>
+  </div>
+</section>
+
+<section class="section" id="faq">
+  <div class="wrap">
+    <div class="section-head"><h2>Questions? Answers.</h2></div>
+    <div class="faq">
+      <details><summary>How do I activate Pro?</summary><p>After paying you get a license key by email (it's also in the Creem customer portal). In SnapTable, click the plan badge at the top of the panel, paste the key and press Activate.</p></details>
+      <details><summary>Can I use it on more than one computer?</summary><p>Yes — one license works on up to 3 Chrome profiles. Use “Deactivate on this device” in the plan dialog to move it.</p></details>
+      <details><summary>How do I cancel?</summary><p>Any time, from the <a href="https://creem.io/portal/login">Creem customer portal</a>. Pro stays active until the end of the period you paid for.</p></details>
+      <details><summary>Do you see the data I scrape?</summary><p>No. Detection, extraction and file exports all happen inside your browser. See the <a href="/snaptable/privacy/">privacy policy</a>.</p></details>
+      <details><summary>Is scraping allowed?</summary><p>SnapTable reads what your browser already shows you. You're responsible for following each website's terms and the law where you live — see our <a href="/snaptable/terms/">terms</a>.</p></details>
+    </div>
+  </div>
 </section>
 
 </main>
-<footer>
-  <div class="wrap">
-    <span>© 2026 Ogerek · SnapTable AI</span>
-    <nav><a href="/snaptable/privacy/">Privacy</a><a href="/snaptable/terms/">Terms</a><a href="/snaptable/refund/">Refunds</a><a href="mailto:hello@ogerek.com">Contact</a></nav>
-  </div>
-</footer>
+<footer><div class="wrap"><span>Copyright © 2026 Ogerek. All rights reserved.</span><nav><a href="/snaptable/privacy/">Privacy Policy</a><a href="/snaptable/terms/">Terms of Service</a><a href="/snaptable/refund/">Refunds</a><a href="mailto:hello@ogerek.com">Contact</a></nav></div></footer>
 </body>
 </html>
