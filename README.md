@@ -1,15 +1,20 @@
 # ogerek-products
 
-Product pages served under **ogerek.com/&lt;product&gt;** — a Cloudflare Worker with static assets.
-Only the routes listed in `wrangler.jsonc` are handled here; every other path on ogerek.com
-still goes to the main Ogerek app.
+**ogerek.com** — a home for Ogerek's business products: the home page lists the products and
+each product lives under **ogerek.com/&lt;product&gt;**. Served by a Cloudflare Worker with static
+assets (`ogerek.com/*`). More specific routes, such as the SnapTable license API at
+`ogerek.com/snaptable/api/*`, are handled by their own Workers.
 
-| Path | Product |
+| Path | Content |
 | --- | --- |
+| [ogerek.com](https://ogerek.com/) | Products home page |
 | [ogerek.com/snaptable](https://ogerek.com/snaptable/) | SnapTable AI — Chrome extension that scrapes tables & lists ([source](https://github.com/sertelemre/snaptable)) |
 
 ```
 public/
+  index.html              products home page (add a card per product)
+  404.html
+  assets/ogerek.css
   snaptable/
     index.html            landing + pricing + FAQ
     thanks/               Creem return URL after checkout (how to activate the license)
@@ -23,13 +28,13 @@ public/
 ```bash
 npm install
 npm run dev       # http://localhost:8787/snaptable/
-npm run deploy    # publishes and (re)attaches the ogerek.com/snaptable* routes
+npm run deploy    # publishes and (re)attaches the ogerek.com/* routes
 ```
 
 ## Adding another product
 
 1. Put its pages in `public/<product>/`.
-2. Add `{ "pattern": "ogerek.com/<product>*", "zone_name": "ogerek.com" }` (and the `www.` variant) to `routes`.
+2. Add a product card to `public/index.html` (copy the SnapTable one).
 3. `npm run deploy`.
 
 ## SnapTable go-live checklist
