@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LocalSession — Many accounts. One browser.</title>
+<meta name="description" content="Chrome extension that gives every tab its own isolated session: be logged in to the same site with different accounts side by side. Data stays on your computer.">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/png" href="/localsession/assets/icon32.png">
+<link rel="stylesheet" href="/assets/site.css">
+<style>
+  /* LocalSession's popup is 380px wide; show it at its natural size next to the page. */
+  .window.ls { grid-template-columns: 1fr 380px; grid-template-rows: 38px 520px; }
+  .window.ls .side { background: #f7f7fb; }
+  @media (max-width: 900px) { .window.ls { grid-template-columns: 1fr; grid-template-rows: 38px auto; max-width: 380px; } }
+</style>
+<meta property="og:title" content="LocalSession — Many accounts. One browser.">
+<meta property="og:description" content="Chrome extension that gives every tab its own isolated session: be logged in to the same site with different accounts side by side. Data stays on your computer.">
+<meta property="og:image" content="https://ogerek.com/localsession/assets/icon512.png">
+<meta property="og:url" content="https://ogerek.com/localsession/">
+</head>
+<body class="has-subnav">
+<header class="gnav"><div class="wrap"><a class="wordmark" href="/">ogerek</a><nav><a href="/#products">Products</a><a href="mailto:hello@ogerek.com">Contact</a></nav></div></header>
+<div class="subnav"><div class="wrap">
+  <a class="title" href="/localsession/"><img src="/localsession/assets/icon128.png" alt="">LocalSession</a>
+  <nav><a href="/localsession/#features">Features</a><a href="/localsession/#how">How it works</a><a href="/localsession/#faq">FAQ</a><a class="pill small" href="/localsession/#pricing">Get Pro</a></nav>
+</div></div>
+<main>
+<section class="hero">
+  <div class="wrap">
+    <div class="eyebrow"><img src="/localsession/assets/icon128.png" alt="">LocalSession</div>
+    <h1>Many accounts.<br>One browser.</h1>
+    <p class="sub">LocalSession gives every tab its own isolated session — so you can be logged in to the same site with different accounts, side by side. Your sessions never leave your computer.</p>
+    <div class="ctas"><a class="pill" href="#pricing">See plans</a><a class="more" href="#how">How it works</a></div>
+    <p class="note">Coming soon to the Chrome Web Store. Free to start.</p>
+  </div>
+  <div class="stage">
+    <div class="window ls" role="img" aria-label="A seller dashboard open in the Client A profile, with colored tab groups for Client A, Personal and Store 2, next to the LocalSession popup">
+      <div class="chrome"><i></i><i></i><i></i><span>seller.example.com</span></div>
+      <div class="page"><img src="/localsession/assets/page.jpg" alt="" width="1280" height="900"></div>
+      <div class="side"><img src="/localsession/assets/panel.png" alt="" width="380" height="520"></div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="features">
+  <div class="wrap">
+    <div class="section-head"><h2>Every account in its own tab.<br>Nothing mixed up.</h2><p>For social media managers, e-commerce sellers and QA teams who juggle logins all day.</p></div>
+    <div class="bento">
+      <div class="tile w4"><svg class="icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="12" width="22" height="18" rx="3"/><path d="M14 12V9a3 3 0 0 1 3-3h16a3 3 0 0 1 3 3v14a3 3 0 0 1-3 3h-7"/><path d="M4 17h22"/></svg><h3>Real isolation, enforced by Chrome.</h3><p>Requests from a profile tab carry only that profile's cookies, and new logins are saved into the profile instead of your browser. Your other tabs never notice.</p></div>
+      <div class="tile"><div class="big">3</div><h3>profiles free</h3><p>Plus unlimited temporary sessions that vanish when you close their last tab.</p></div>
+      <div class="tile"><svg class="icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="20" cy="10" rx="12" ry="4"/><path d="M8 10v10c0 2.2 5.4 4 12 4s12-1.8 12-4V10"/><path d="M8 20v10c0 2.2 5.4 4 12 4s12-1.8 12-4V20"/></svg><h3>Site storage too.</h3><p>localStorage, IndexedDB and more are kept apart per profile, so web apps never mix up who you are.</p></div>
+      <div class="tile"><svg class="icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 14h8l3-5h19v22H5z"/><circle cx="12" cy="22" r="3"/></svg><h3>Always know where you are.</h3><p>Colored tab groups, a [Profile] prefix in the tab title and a ring around the site icon.</p></div>
+      <div class="tile"><svg class="icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="8" width="20" height="16" rx="3"/><rect x="15" y="16" width="20" height="16" rx="3"/><path d="m22 24 4 4 6-7"/></svg><h3>Sign-in popups stay put.</h3><p>“Sign in with Google” windows and links you open from a profile stay in that profile.</p></div>
+      <div class="tile w3 ink"><svg class="icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="18" width="24" height="17" rx="3"/><path d="M13 18v-5a7 7 0 0 1 14 0v5"/></svg><h3>Your sessions stay on your computer.</h3><p>No account, no cloud sync, no analytics. Profiles and their cookies are stored only in your browser.</p></div>
+      <div class="tile w3"><svg class="icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 5v19m-7-7 7 7 7-7"/><path d="M8 22v8a3 3 0 0 0 3 3h18a3 3 0 0 0 3-3v-8"/></svg><h3>Encrypted backup. <span style="color:var(--accent)">Pro</span></h3><p>Move a logged-in profile to another computer or a teammate in one file, locked with your password.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="how">
+  <div class="wrap">
+    <div class="section-head"><h2>Three steps. That's it.</h2></div>
+    <div class="steps">
+      <div class="step"><div class="n">1</div><h3>Create a profile.</h3><p>Click LocalSession, choose “New profile”, give it a name and a color — say, “Client A”.</p></div>
+      <div class="step"><div class="n">2</div><h3>Open a site in it.</h3><p>The tab joins a colored “Client A” group. Links and popups you open from it stay there.</p></div>
+      <div class="step"><div class="n">3</div><h3>Sign in once.</h3><p>The login lives in that profile, next to your other accounts — and is still there tomorrow.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="pricing">
+  <div class="wrap">
+    <div class="section-head"><h2>Start free.<br>Go Pro when you need more.</h2></div>
+    <div class="plans">
+      <div class="plan">
+        <div class="label">Free</div>
+        <h3>LocalSession</h3>
+        <div class="price">$0</div>
+        <ul><li>3 saved profiles</li><li>Unlimited temporary sessions</li><li>Full cookie and site-storage isolation</li><li>Tab groups, titles and favicon rings</li></ul>
+        <span class="pill muted">Coming soon to Chrome</span>
+      </div>
+      <div class="plan pro">
+        <div class="label">Pro</div>
+        <h3>LocalSession Pro</h3>
+        <div class="price">$2.99 <span>/ month</span></div>
+        <ul><li>Unlimited profiles</li><li>One-click encrypted backup and restore</li><li>Move a logged-in profile to another computer</li><li>Up to 3 Chrome profiles per license</li><li>Cancel anytime</li></ul>
+        <a class="pill" href="https://www.creem.io/product/prod_REPLACE_WITH_LIVE_PRODUCT">Get LocalSession Pro</a>
+      </div>
+    </div>
+    <p class="fineprint">Payments are handled by Creem, our merchant of record. Sales tax or VAT is added at checkout where required.</p>
+  </div>
+</section>
+
+<section class="section" id="faq">
+  <div class="wrap">
+    <div class="section-head"><h2>Questions? Answers.</h2></div>
+    <div class="faq">
+      <details><summary>How do I activate Pro?</summary><p>After paying you get a license key by email (it's also in the Creem customer portal). In LocalSession open Settings → Plan &amp; license, paste the key and press Activate.</p></details>
+      <details><summary>How isolated is a profile?</summary><p>Cookies are separated at the network level: requests from a profile tab carry only that profile's cookies. Site storage such as localStorage and IndexedDB is kept apart per profile inside the page. A site's own service worker runs outside any tab, so LocalSession removes those for sites you open in a profile.</p></details>
+      <details><summary>Can I use it on more than one computer?</summary><p>Yes — one Pro license works on up to 3 Chrome profiles. Use “Deactivate on this computer” in Settings to move it. To take a logged-in profile with you, export an encrypted backup.</p></details>
+      <details><summary>How do I cancel?</summary><p>Any time, from the <a href="https://creem.io/portal/login">Creem customer portal</a>. Pro stays active until the end of the period you paid for. Profiles beyond the free three are locked, never deleted.</p></details>
+      <details><summary>Do you see my logins?</summary><p>No. Profiles and their cookies are stored only in your browser. The only thing LocalSession sends anywhere is the license check for Pro. See the <a href="/localsession/privacy/">privacy policy</a>.</p></details>
+      <details><summary>Is using several accounts allowed?</summary><p>That depends on each website. Some services limit how many accounts one person may run — you're responsible for following their terms. See our <a href="/localsession/terms/">terms</a>.</p></details>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer><div class="wrap"><span>Copyright © 2026 Ogerek. All rights reserved.</span><nav><a href="/localsession/privacy/">Privacy Policy</a><a href="/localsession/terms/">Terms of Service</a><a href="/localsession/refund/">Refunds</a><a href="mailto:hello@ogerek.com">hello@ogerek.com</a></nav></div></footer>
+</body>
+</html>

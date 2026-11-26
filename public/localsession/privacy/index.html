@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — LocalSession</title>
+<meta name="description" content="What data the LocalSession Chrome extension and ogerek.com handle.">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/png" href="/localsession/assets/icon32.png">
+<link rel="stylesheet" href="/assets/site.css">
+<meta property="og:title" content="Privacy Policy — LocalSession">
+<meta property="og:description" content="What data the LocalSession Chrome extension and ogerek.com handle.">
+<meta property="og:image" content="https://ogerek.com/localsession/assets/icon512.png">
+<meta property="og:url" content="https://ogerek.com/localsession/privacy/">
+</head>
+<body class="has-subnav">
+<header class="gnav"><div class="wrap"><a class="wordmark" href="/">ogerek</a><nav><a href="/#products">Products</a><a href="mailto:hello@ogerek.com">Contact</a></nav></div></header>
+<div class="subnav"><div class="wrap">
+  <a class="title" href="/localsession/"><img src="/localsession/assets/icon128.png" alt="">LocalSession</a>
+  <nav><a href="/localsession/#features">Features</a><a href="/localsession/#how">How it works</a><a href="/localsession/#faq">FAQ</a><a class="pill small" href="/localsession/#pricing">Get Pro</a></nav>
+</div></div>
+<main>
+<div class="doc">
+<h1>Privacy Policy</h1>
+  <p class="updated">Last updated: November 26, 2026</p>
+  <p>LocalSession is a Chrome extension operated by Ogerek that lets you use several accounts of the same website in separate tabs. This policy explains what data the extension and this website handle. Short version: <strong>your sessions stay in your browser.</strong></p>
+
+  <h2>What stays on your device</h2>
+  <ul>
+    <li><strong>Profiles and logins.</strong> Your profiles (name, color, icon, start pages, recently used sites) and the cookies websites set inside each profile are stored in the extension's local storage in Chrome. They are not synced with your Google account and never sent to us.</li>
+    <li><strong>Site storage.</strong> Data that websites keep in localStorage, IndexedDB and similar storage stays in Chrome's own storage, separated per profile.</li>
+    <li><strong>Backups.</strong> Exported backups are encrypted on your computer with a password you choose (PBKDF2-SHA256 and AES-256-GCM) and saved wherever you decide. We never receive them.</li>
+  </ul>
+
+  <h2>What leaves your device</h2>
+  <ul>
+    <li><strong>License checks (Pro only).</strong> When you activate or re-validate a license, the extension sends your license key, the license instance id and a device label (e.g. “LocalSession · MacIntel”) to our license server, which runs on Cloudflare and forwards the request to Creem. Cloudflare may keep standard technical logs (such as IP address and time) for a short period.</li>
+    <li><strong>Abuse prevention (Pro only).</strong> To stop shared or refunded keys from being used, the license server keeps a one-way hash of your license key — never the key itself — together with how often it was activated (with the device label and country of the last activation), whether it has been revoked, and which Creem subscription and order it belongs to. Creem tells our server about purchases, renewals, cancellations, refunds and disputes so that access follows your subscription.</li>
+    <li><strong>Site icons.</strong> To draw the colored ring around a tab's icon, the extension may download that site's icon directly from the site, without cookies.</li>
+    <li><strong>Payments.</strong> Purchases are processed by Creem, our merchant of record. Creem collects your payment details, name, email and billing country under its own privacy policy. We receive order information (such as email, country and subscription status) to provide support.</li>
+  </ul>
+
+  <h2>What we don't do</h2>
+  <p>No analytics or tracking in the extension, no advertising, no sale of personal data, and no access to your browsing history or to the content of your accounts.</p>
+
+  <h2>Permissions</h2>
+  <p>The extension asks for access to all sites because a profile tab can open any website you choose; it uses this access only to keep the cookies and site storage of tabs you place in a profile separate from the rest of your browser. It can copy an existing login from your regular browser into a profile, but only when you ask it to, and it removes a site's service worker when that site is opened in a profile so the site's background requests cannot bypass the isolation.</p>
+
+  <h2>Your rights</h2>
+  <p>You can delete all local data by deleting your profiles or removing the extension. For questions, access or deletion requests about order data, contact <a href="mailto:hello@ogerek.com">hello@ogerek.com</a>. Depending on where you live (for example under the GDPR or KVKK) you may have additional rights, which we will honour.</p>
+
+  <h2>Changes</h2>
+  <p>We will update this page if anything changes and adjust the date above.</p>
+</div>
+</main>
+<footer><div class="wrap"><span>Copyright © 2026 Ogerek. All rights reserved.</span><nav><a href="/localsession/privacy/">Privacy Policy</a><a href="/localsession/terms/">Terms of Service</a><a href="/localsession/refund/">Refunds</a><a href="mailto:hello@ogerek.com">hello@ogerek.com</a></nav></div></footer>
+</body>
+</html>
